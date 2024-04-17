@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>banner</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      swiper-slide {
+        background-position: center;
+        background-size: contain;
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        min-height: 170px;
+      }
+      /* Corrected selector for pagination bullets */
+      .swiper-pagination
+        .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: orange !important;
+      }
+    </style>
+  </head>
+
+  <!-- navigation="true" -->
+  <!-- loop="true" -->
+  <body>
+    <swiper-container
+      class="mySwiper"
+      pagination="true"
+      pagination-clickable="true"
+      space-between="30"
+      autoplay-disable-on-interaction="false"
+      autoplay-delay="4000"
+      effect="fade"
+    >
+      <swiper-slide>
+        <img
+          src="https://raw.githubusercontent.com/muhammadawais-developer/sultan-project/main/1.png"
+        />
+      </swiper-slide>
+      <swiper-slide>
+        <img
+          src="https://raw.githubusercontent.com/muhammadawais-developer/sultan-project/main/2.png"
+        />
+      </swiper-slide>
+      <swiper-slide>
+        <img
+          src="https://raw.githubusercontent.com/muhammadawais-developer/sultan-project/main/3.png"
+        />
+      </swiper-slide>
+    </swiper-container>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
